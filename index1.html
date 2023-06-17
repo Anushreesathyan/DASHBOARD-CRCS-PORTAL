@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRONT END USER INTERFACE</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    
+    <section class="sidebar">
+      <div class="nav-header">
+        <p class="logo">Dashboard</p>
+        <i class="bx bx-menu-alt-right btn-menu"></i>
+      </div>
+   
+      <ul class="nav-links">
+        <li>
+          <i class="bx bx-search search-btn"></i>
+          <input type="text" placeholder="search..." />
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-home"></i>
+            <span class="title">HOME</span>
+          </a>
+          <span class="tooltip">HOME</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-registered"></i>
+            <span class="title">REGISTERED SOCIETY</span>
+          
+          </a>
+          <span class="tooltip">REGISTERED SOCIETY</span>
+        
+        </li>
+        <li>
+          <a href="combined_visualizations.html">
+            <i class="fa fa-bar-chart"></i>
+            <span class="title">CHARTS</span>
+          </a>
+          <span class="tooltip">CHARTS</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-file-pdf-o"></i>
+            <span class="title">REPORTS</span>
+          </a>
+          <span class="tooltip">REPORTS</span>
+          
+
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-envelope"></i>
+            <span class="title">MSCS ACTS</span>
+          </a>
+          <span class="tooltip">MSCS ACTS</span>
+          
+
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-users"></i>
+            <span class="title">PORTAL</span>
+          </a>
+          <span class="tooltip">PORTAL</span>
+        
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-th"></i>
+            <span class="title">FORMS</span>
+          </a>
+          <span class="tooltip">FORMS</span>
+        </li>
+        <li>
+            <a href="#">
+              <i class="fa fa-university"></i>
+              <span class="title">BANK</span>
+            </a>
+            <span class="tooltip">BANK</span>
+          </li>
+      </ul>
+      <div class="theme-wrapper">
+        <i class="bx bxs-moon theme-icon"></i>
+        <p>Dark Theme</p>
+        <div class="theme-btn">
+          <span class="theme-ball"></span>
+        </div>
+      </div>
+    </section>
+   
+  
+
+
+    <section class="home">
+        <div class="logo">
+            <a href="#"><img src="123.png" >
+              </a>
+               <div class="content">
+                <h2>MULTI-STATE CO-OPERATIVE SOCIETIES</h2><br>
+               <h3>Ministry of Cooperation, Govt. of India</h3>
+                <pre  class="dropShadow">
+An Act to consolidate and amend the law relating to co-operative societies,with objects not confined
+to one State and serving the interests of members in more than one State,to facilitate the voluntary
+formation and democratic functioning of co-operatives as people's institutions based on self-help and
+mutual aid and to enable them to promote their economic and social betterment and to provide functional
+autonomy ,was being felt necessary by the various cooperative societies, and federation of various
+cooperative societies as well as by the Government. In order to achieve the objective The Multi State
+Cooperative Societies Bill was introduced in the Parliament.The bill having been passed by both the
+Houses of Parliament received the assent of the President on 3rd July 2002 and it came on the Statute
+Book as The Multi State Cooperative Societies ACT 2002 (39 of 2002)
+                </pre>
+                
+                <div class="news">
+
+                <marquee behaviour="scroll" direction="up">
+              
+               <pre>
+                <h2>NEWS /EVENTS</h2>
+     
+1. Implementation: The Multi State Cooperative Societies Act, 2002 came 
+into effect after receiving the 
+assent of the President on 3rd July 2002.
+
+2. Regulatory Framework: The Act established a comprehensive
+ regulatory framework for 
+multi-state cooperative societies operating in India.
+
+3. Registration Process: The Act outlines the registration 
+process for multi-state cooperative societies, 
+including the requirements and procedures to be followed.
+
+4. Central Registrar: The Act provides for the appointment of
+ a Central Registrar responsible for overseeing 
+the registration and regulation of multi-state cooperative
+ societies at the national level.
+
+5. Governance and Management: The Act lays down provisions 
+related to the governance and management of
+ multi-state cooperative societies, including the rights and 
+ liabilities of members, conduct of meetings, and 
+ decision-making processes.
+
+6. Functional Autonomy: The Act emphasizes the functional autonomy 
+of cooperative societies, enabling them to manage their affairs independently 
+and pursue their objectives in line with the cooperative principles.
+
+7. Compliance and Auditing: The Act mandates compliance with statutory 
+requirements, maintenance of proper accounts and records, and regular
+ auditing of multi-state cooperative societies.
+
+8. Role of Cooperative Federations: The Act recognizes the significance 
+of cooperative federations, which are associations of cooperative societies 
+working together to coordinate activities, provide support, 
+and promote the interests of member societies.
+
+9. Amendments and Updates: Over the years, there may have been amendments
+ or updates to the Multi State Cooperative Societies Act, 2002 to address
+  evolving needs and address any gaps or issues in its implementation.
+
+               </pre>
+                   </marquee>
+                   </div>
+
+
+
+       </div>
+  </div>
+
+    </section>
+
+
+      
+   
+
+
+    <script>
+      const btn_menu = document.querySelector(".btn-menu");
+      const side_bar = document.querySelector(".sidebar");
+
+      btn_menu.addEventListener("click", function () {
+        side_bar.classList.toggle("expand");
+        changebtn();
+      });
+
+      function changebtn() {
+        if (side_bar.classList.contains("expand")) {
+          btn_menu.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else {
+          btn_menu.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+      }
+    </script>
+  </body>
+</html>
